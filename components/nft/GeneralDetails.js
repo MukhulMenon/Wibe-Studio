@@ -23,11 +23,11 @@ const GeneralDetails = ({ selectedNft }) => {
   return (
     <div className={style.wrapper}>
       <div className={style.infoContainer}>
-        <div className={style.accent}>Bored Ape Yacht Club</div>
+        <div className={style.accent}>Wibe Studio</div>
         <div className={style.nftTitle}>{selectedNft?.name}</div>
         <div className={style.otherInfo}>
           <div className={style.ownedBy}>
-            Owned by <span className={style.accent}>e88vault</span>
+            Owned by <span className={style.accent}>Sahil Goliwar</span>
           </div>
           <div className={style.likes}>
             <AiFillHeart className={style.likeIcon} /> 2.3K favorites

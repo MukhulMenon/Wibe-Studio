@@ -42,14 +42,7 @@ const MakeOffer = ({ isListed, selectedNft, listings, marketPlaceModule }) => {
     quantityDesired = 1,
     module = marketPlaceModule
   ) => {
-    console.log(listingId, quantityDesired, module, 'david')
-    // yo RAZA lets goooo!!!
-    //yo Qazi, ok
-    // sure okay about to run it...
-    // just clicked buy now...
-    // still error
-    // where can i see the contract address of the marketplace module
-    // in [nftId.js]
+    console.log(listingId, quantityDesired, module)
     await module
       .buyoutDirectListing({
         listingId: listingId,
@@ -62,7 +55,7 @@ const MakeOffer = ({ isListed, selectedNft, listings, marketPlaceModule }) => {
 
   return (
     <div className="flex h-20 w-full items-center rounded-lg border border-[#151c22] bg-[#303339] px-12">
-      <Toaster position="bottom-left" reverseOrder={false} />
+      <Toaster position="top-center" reverseOrder={false} />
       {isListed === 'true' ? (
         <>
           <div

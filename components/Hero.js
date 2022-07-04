@@ -1,8 +1,10 @@
 import React from 'react'
+import Link from 'next/link'
+
 
 const style = {
   wrapper: `relative`,
-  container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://lh3.googleusercontent.com/ujepnqpnL0nDQIHsWxlCXzyw4pf01yjz1Jmb4kAQHumJAPrSEj0-e3ABMZlZ1HEpJoqwOcY_kgnuJGzfXbd2Tijri66GXUtfN2MXQA=s250')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
+  container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://lh3.googleusercontent.com/00F30SCTQbZtnpGaFw_ihyUTZJHDR-JhDpPJHnL_to76-f_8QCsjUHkO3JFfLkwPFU4eoE_R1gGApy_WiCYn4pe4_4oC-N9w2AfCsA=w345')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
   contentWrapper: `flex h-screen relative justify-center flex-wrap items-center`,
   copyContainer: `w-1/2`,
   title: `relative text-white text-[46px] font-semibold`,
@@ -24,35 +26,37 @@ const Hero = () => {
         <div className={style.contentWrapper}>
           <div className={style.copyContainer}>
             <div className={style.title}>
-              Discover, collect, and sell extraordinary NFTs
+              Wibe Studio
             </div>
             <div className={style.description}>
-              OpenSea is the world&apos;s first and largest NFT marketplace
+            Wibe studio is one of the largest NFT clothing collection on the WEB
             </div>
             <div className={style.ctaContainer}>
-              <button className={style.accentedButton}>Explore</button>
-              <button className={style.button}>Create</button>
+              <Link href="/collections/0x6A8fbdfb4Bf1e94aB500e14D04012f16E4a82ff3">
+              <button className={style.accentedButton}>Explore</button></Link>
+              <Link href="https://thirdweb.com/dashboard">
+              <button className={style.button}>Create</button></Link>
             </div>
           </div>
           <div className={style.cardContainer}>
             <img
               className="rounded-t-lg"
-              src="https://lh3.googleusercontent.com/ujepnqpnL0nDQIHsWxlCXzyw4pf01yjz1Jmb4kAQHumJAPrSEj0-e3ABMZlZ1HEpJoqwOcY_kgnuJGzfXbd2Tijri66GXUtfN2MXQA=s550"
+              src="https://lh3.googleusercontent.com/00F30SCTQbZtnpGaFw_ihyUTZJHDR-JhDpPJHnL_to76-f_8QCsjUHkO3JFfLkwPFU4eoE_R1gGApy_WiCYn4pe4_4oC-N9w2AfCsA=w345"
               alt=""
             />
             <div className={style.infoContainer}>
               <img
                 className="h-[2.25rem] rounded-full"
-                src="https://lh3.googleusercontent.com/qQj55gGIWmT1EnMmGQBNUpIaj0qTyg4YZSQ2ymJVvwr_mXXjuFiHJG9d3MRgj5DVgyLa69u8Tq9ijSm_stsph8YmIJlJQ1e7n6xj=s64"
+                src="https://openseauserdata.com/files/7c536adcc7b722a408c47865d745a842.jpg"
                 alt=""
               />
               <div className={style.author}>
-                <div className={style.name}>Jolly</div>
+                <div className={style.name}>Sahil</div>
                 <a
                   className="text-[#1868b7]"
-                  href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/2324922113504035910649522729980423429926362207300810036887725141691069366277"
+                  href="https://testnets.opensea.io/assets/rinkeby/0x6a8fbdfb4bf1e94ab500e14d04012f16e4a82ff3/6"
                 >
-                  hola-kanola
+                  Wibe Studio
                 </a>
               </div>
             </div>
